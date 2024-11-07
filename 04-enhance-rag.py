@@ -125,7 +125,8 @@ prompt = ChatPromptTemplate.from_messages(
 
 entity_chain = prompt | llm.with_structured_output(Entities)
 
-entity_chain.invoke({"question": "Where was Amelia Earhart born?"}).names
+names = entity_chain.invoke({"question": "Where was Amelia Earhart born?"}).names
+print(names)
 
 def generate_full_text_query(input: str) -> str:
     """
@@ -192,7 +193,7 @@ in its original language.
 Chat History:
 {chat_history}
 Follow Up Input: {question}
-Standalone question:"""  # noqa: E501
+Standalone question:"""
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
 def _format_chat_history(chat_history: List[Tuple[str, str]]) -> List:
