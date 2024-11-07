@@ -34,3 +34,6 @@ input("Press Enter to continue...")
 # https://towardsdatascience.com/langchain-has-added-cypher-search-cb9d821120d5
 # https://github.com/tomasonjo/blogs/blob/master/llm/langchain_neo4j.ipynb
 # https://sandbox.neo4j.com/?usecase=icij-paradise-papers
+
+# https://neo4j.com/developer-blog/langchain-library-full-support-neo4j-vector-index/
+# https://github.com/tomasonjo/blogs/blob/master/llm/generic_cypher_gpt4.ipynb

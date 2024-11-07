@@ -140,3 +140,7 @@ clean_graph(graph)
 asyncio.run(process_graph_allowed_nodes_relations_properties_2())
 
 clean_graph(graph)
+
+# Building Knowledge Graphs with LLM Graph Transformer - 
+# blog https://towardsdatascience.com/building-knowledge-graphs-with-llm-graph-transformer-a91045c49b59
+# notebook https://github.com/tomasonjo/blogs/blob/master/llm/llm_graph_transformer_in_depth.ipynb

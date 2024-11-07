@@ -80,3 +80,7 @@ existing_index = Neo4jVector.from_existing_index(
     index_name="wikipedia",
     text_node_property="info",  # Need to define if it is not default
 )
+
+# Learn how to customize LangChain’s wrapper of Neo4j vector index
+# blog https://blog.langchain.dev/neo4j-x-langchain-new-vector-index/
+# notebook https://github.com/tomasonjo/blogs/blob/master/llm/neo4jvector_langchain_deepdive.ipynb
