@@ -138,3 +138,5 @@ asyncio.run(process_graph_allowed_nodes_relations_properties_1())
 
 clean_graph(graph)
 asyncio.run(process_graph_allowed_nodes_relations_properties_2())
+
+clean_graph(graph)
