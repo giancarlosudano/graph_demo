@@ -6,17 +6,13 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.docstore.document import Document
 from langchain_community.graphs import Neo4jGraph
 
-def get_graph():
+def clean_graph(graph):
     graph = Neo4jGraph(
         url=os.getenv("NEO4J_URL"),
         username=os.getenv("NEO4J_USERNAME"),
         password=os.getenv("NEO4J_PASSWORD"),
         refresh_schema=False
     )
-    return graph
-
-def clean_graph(graph):
-    input("Press Enter to delete graph...")
     query = """
     MATCH (n)
     DETACH DELETE n
